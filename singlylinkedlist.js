@@ -7,7 +7,8 @@ export default class SinglyLinkedList {
     this.clear();
   }
 
-  add(node) {
+  add(data) {
+    const node = { data: data, next: null };
     if (!this.#head) {
       this.#head = node;
       this.#tail = this.#head;

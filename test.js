@@ -2,6 +2,7 @@
 
 import InsertionSort from "./insertionSort.js";
 import MergeSort from "./mergeSort.js";
+import PatienceSort from "./patienceSort.js";
 
 window.addEventListener("load", start);
 
@@ -14,6 +15,7 @@ function start() {
   console.log("Test script running...");
   mergeSortTest();
   insertionSortTest();
+  PatienceSortTest();
 }
 
 function mergeSortTest() {
@@ -26,4 +28,10 @@ function insertionSortTest() {
   console.log("Insertion Sort Test");
   const insertionSort = new InsertionSort(arrToSort);
   window.insertionSort = insertionSort;
+}
+
+function PatienceSortTest() {
+  console.log("Patience Sort Test");
+  const patienceSort = new PatienceSort(arrToSort);
+  window.patienceSort = patienceSort;
 }
