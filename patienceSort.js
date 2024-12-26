@@ -33,7 +33,6 @@ export default class PatienceSort {
         piles.push(newPile);
       }
     });
-    console.log(piles);
     return this.mergePiles(piles);
   }
 
@@ -56,7 +55,6 @@ export default class PatienceSort {
       }
 
       if (minIndex !== -1) {
-        console.log(piles[minIndex]);
         sortedArray.push(piles[minIndex].pop());
         tempPeekArray[minIndex] = piles[minIndex].peek();
       }

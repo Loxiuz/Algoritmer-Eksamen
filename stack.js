@@ -22,16 +22,12 @@ export default class Stack {
       this.tail = this.tail.prev;
       this.length--;
       return node.data;
-    } else {
-      console.log("Can't pop, stack empty");
     }
   }
 
   peek() {
     if (this.length > 0) {
       return this.tail.data;
-    } else {
-      console.log("Can't peek, stack empty");
     }
   }
 
